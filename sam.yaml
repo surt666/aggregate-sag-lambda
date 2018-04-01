@@ -11,10 +11,10 @@ Parameters:
   Role:
     Type: String
 Resources:
-  EventSystemFunction:
+  AggregateSagFunction:
     Type: AWS::Serverless::Function
     Properties:
-      Handler: event_system.write
+      Handler: aggregate_sag_lambda.aggregate_sag
       Runtime: java8
       CodeUri:
         Bucket: !Ref Bucket
